@@ -12,6 +12,7 @@ module Rastelli
     java_import 'java.util.concurrent.TimeUnit'
     java_import 'java.util.concurrent.CountDownLatch'
     java_import 'java.util.concurrent.locks.ReentrantLock'
+    java_import 'java.util.concurrent.ConcurrentHashMap'
   end
 
   class Lock

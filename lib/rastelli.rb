@@ -5,3 +5,4 @@ end
 
 require 'rastelli/concurrency'
 require 'rastelli/producer'
+require 'rastelli/consumer'
