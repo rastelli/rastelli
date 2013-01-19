@@ -9,7 +9,7 @@ module Rastelli
 
 			describe '#register' do
 
-				context 'given stream to register does not exist already' do
+				context 'given stream is not registered' do
 
 					it 'registers a new stream' do
 						registry.register('0')						
@@ -17,7 +17,7 @@ module Rastelli
 					end
 				end
 
-				context 'given stream already exists' do
+				context 'given stream is registered' do
 
 					it 'does not re-register stream' do
 						registry.register('0')
@@ -25,6 +25,10 @@ module Rastelli
 
 						registry.registered_streams.should eq(['0'])
 					end
+				end
+
+				context 'given stream is suspended' do
+
 				end
 			end
 
