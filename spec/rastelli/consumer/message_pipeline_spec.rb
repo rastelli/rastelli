@@ -1,17 +1,24 @@
 require 'spec_helper'
 
 module Rastelli
+	class Consumer
 
-  describe MessagePipeline do
+	  describe MessagePipeline do
 
-    describe '#start' do
+	  	describe '#setup' do
 
-      it 'starts the pipeline'
-    end
+	  		it 'creates the pipeline'
+	  	end
 
-    describe '#shutdown' do
+	    describe '#start' do
 
-      it 'stops the pipeline'
-    end
-  end
+	      it 'starts the pipeline'
+	    end
+
+	    describe '#shutdown' do
+
+	      it 'stops the pipeline'
+	    end
+	  end
+	end
 end
